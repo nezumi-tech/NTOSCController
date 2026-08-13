@@ -32,8 +32,8 @@ VRChat内で特定のギミック（稼働状況のリアルタイム表示な�
 **`config.json` の設定例:**
 ```json
 {
-  "DataFileUrl": "[https://your-proxy.workers.dev/datafile.json](https://your-proxy.workers.dev/datafile.json)",
-  "MbsStatusUrl": "[https://your-proxy.workers.dev/mbs_status.json](https://your-proxy.workers.dev/mbs_status.json)"
+  "DataFileUrl": "https://your-proxy.workers.dev/datafile.json",
+  "MbsStatusUrl": "https://your-proxy.workers.dev/mbs_status.json"
 }
 ```
 Note: `config.json` は `.gitignore` に登録されており、リポジトリには含まれません。
