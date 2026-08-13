@@ -251,8 +251,11 @@ namespace NanoTerasuOSCController
                     int btStat = GetStatusValue(root, "nt_connection");
 
                     _oscController.SendInt("NT_SR_Stat", srStat);
+                    // await Task.Delay(20);
                     _oscController.SendInt("NT_Lin_Stat", linStat);
+                    // await Task.Delay(20);
                     _oscController.SendInt("NT_BT_Stat", btStat);
+                    // await Task.Delay(20);
                 }
 
                 string mbsJson = await _httpClient.GetStringAsync(_appConfig.MbsStatusUrl);
@@ -272,6 +275,7 @@ namespace NanoTerasuOSCController
                     {
                         int stat = GetStatusValue(root, bl.Value);
                         _oscController.SendInt(bl.Key, stat);
+                        // await Task.Delay(20);
                     }
                 }
 
